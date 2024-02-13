@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="namoradinha.css">
+    <link rel="icon" href="image/flower.svg">
+    <title>NAMORADINHA</title>
+</head>
+
+<body>
+    <img src="image/hsm.png" class="image" id="hsm" width="300px" alt="">
+    <img src="image/flork.png" class="image" id="flork" width="40px" alt="">
+    <img src="image/Duolingo-Symbol.png" class="image" id="duolingo" width="300px" alt="">
+    <img src="image/todoro-miyazaki.gif" class="image" id="totoro" width="300px" alt="">
+    <img src="image/Halsey.png" class="image" id="halsey" width="300px" alt="">
+    <img src="image/dna.gif" class="image" id="dna" alt="">
+    <img src="image/torre.png" class="image" id="torre" width="250px" alt="">
+    <img src="image/kittenWar.gif" class="image" id="kittenWar" width="150px" alt="">
+    <img src="image/catDancing.gif" class="image" id="catDancing" width="150px" alt="">
+    <img src="image/chipi-chipi-chapa-chapa-chipi.gif" class="image" id="chipichapa" width="200px" alt="">
+    <div class="box">
+        <p>Quer namorar comigo, Sra. Saiki?</p>
+        <div class="buttons-container">
+            <button>
+                <a href="https://www.youtube.com/watch?v=4akyJGZqjFg">Sim</a>
+            </button>
+            <button id="notButton">Não</button>
+        </div>
+    </div>
+</body>
+<script>
+    let button = document.getElementById('notButton');
+    let height = window.innerHeight - 50;
+    let widht = window.innerWidth - 50;
+
+    notButton.addEventListener("mouseover", () => {
+        // const randomX = Math.floor(Math.random() * (window.innerWidth ));
+        const randomX = Math.floor(Math.random() * ((window.innerWidth / 4) - ((window.innerWidth / 4) * -1)) + ((window.innerWidth / 4) * -1));
+        // const randomY = Math.floor(Math.random() * (window.innerHeight));
+        const randomY = Math.floor(Math.random() * ((window.innerHeight / 4) - ((window.innerHeight / 4) * -1)) + ((window.innerHeight / 4) * -1));
+        notButton.style.position = "relative";
+        notButton.style.left = `${randomX}px`;
+        notButton.style.top = `${randomY}px`;
+    });
+
+    notButton.addEventListener("click", function () {
+        console.log("Botão NAO clicado!");
+        // const randomX = Math.floor(Math.random() * (window.innerWidth ));
+        const randomX = Math.floor(Math.random() * ((window.innerWidth / 4) - ((window.innerWidth / 4) * -1)) + ((window.innerWidth / 4) * -1));
+        // const randomY = Math.floor(Math.random() * (window.innerHeight));
+        const randomY = Math.floor(Math.random() * ((window.innerHeight / 4) - ((window.innerHeight / 4) * -1)) + ((window.innerHeight / 4) * -1));
+        notButton.style.position = "relative";
+        notButton.style.left = `${randomX}px`;
+        notButton.style.top = `${randomY}px`;
+    });
+</script>
+
+</html>

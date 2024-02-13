@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #191919;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.image{
+    position: absolute;
+}
+
+#hsm{
+    top: 20px;
+    right: 1px;
+
+}
+
+#duolingo{
+    top: 50px;
+    left: 20px;
+}
+
+#totoro{
+    bottom: 50px;
+    left: 200px;
+}
+
+#halsey{
+    top: 400px;
+    right: 1px 
+}
+
+#torre{
+    bottom: -20px;
+    right: 350px;
+}
+
+#kittenWar{
+    bottom: 0px;
+    left: 0px;
+}
+
+#catDancing{
+    top: 0px;
+    right: 400px;
+}
+
+#dna{
+    top: 10px;
+    left: 300px;
+}
+
+#chipichapa{
+    left: 0;
+    top: 275px
+}
+
+#flork{
+    top: 285px;
+    right: 470px;
+}
+
+.box {
+    font-size: 20px;
+    color: white;
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+    background: #191919;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    width: 150px;
+}
+
+button {
+    background-color: #ff7eb9; /* Rosa */
+    color: white; /* Letra branca */
+    border: none;
+    border-radius: 20px; /* Borda levemente arredondada */
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    outline: none; /* Remove a borda de foco */
+    margin: 0 10px; 
+}
+button:hover {
+    transform: translateY(-5px);
+}
+
+a{
+    color: white;
+}

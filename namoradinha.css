@@ -70,6 +70,7 @@ a {
 .box {
     font-size: 20px;
     color: white;
+    font-family: sans-serif;
     height: 250px;
     width: 350px;
     border-radius: 10px;
@@ -107,3 +108,32 @@ button:hover {
 a{
     color: white;
 }
+
+@media screen and (max-width: 420px) {
+    .aviso-layout {
+      background-color: purple;
+      color: white;
+      font-family: sans-serif;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      margin: 20px auto;
+      max-width: 80%;
+    }
+
+    .image, p, button, .box{
+        display: none;  
+    }
+
+    .box-cel{
+        flex-direction: column;
+    }
+
+  }
+  
+  /* Oculta o aviso para telas maiores que 420px */
+  @media screen and (min-width: 421px) {
+    .aviso-layout, .box-cel{
+      display: none; /* Oculta o elemento */
+    }
+  }
